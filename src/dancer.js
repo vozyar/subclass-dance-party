@@ -1,3 +1,29 @@
+class Dancer {
+  constructor(top, left, timeBetweenSteps) {
+    this.top = top;
+    this.left = left;
+    this.timeBetweenSteps = timeBetweenSteps;
+    this.$node = $('<span class = "dancer"></span>');
+    //console.log(this.$node)
+    //setTimeout(this.step, timeBetweenSteps);
+    //setPostition(top, left);
+  }
+  step() {
+    this.step();
+    setTimeout(this.step, this.timeBetweenSteps);
+  }
+  //this.step();
+  setPosition(top, left) {
+    var styleSettings = {
+      top: top,
+      left: left,
+    };
+    dancer.$node.css(styleSettings);
+  }
+  //this.setPosition(top, left);
+}
+
+/*
 // Creates and returns a new dancer object that can step
 var makeDancer = function(top, left, timeBetweenSteps) {
 
@@ -30,3 +56,4 @@ var makeDancer = function(top, left, timeBetweenSteps) {
 
   return dancer;
 };
+*/

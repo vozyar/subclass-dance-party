@@ -1,3 +1,15 @@
+class BlinkyDancer extends Dancer {
+  constructor(top, left, timeBetweenSteps) {
+    super(top, left, timeBetweenSteps);
+    //super.step();
+    //console.log(JSON.stringify(this));
+  }
+  step() {
+    //super.step();
+    this.$node.toggle();
+  }
+}
+/*
 var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
   var blinkyDancer = makeDancer(top, left, timeBetweenSteps);
 
@@ -17,3 +29,5 @@ var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
 
   return blinkyDancer;
 };
+
+*/
